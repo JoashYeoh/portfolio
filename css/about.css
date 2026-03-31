@@ -1,0 +1,149 @@
+/* BIO */
+.bio {
+    padding: 0px 20px;
+}
+
+.bio-text {
+  color: #444;
+  line-height: 1.6;
+  font-size: 14px;
+}
+
+.bio-text p {
+  margin-bottom: 20px;
+}
+
+
+/* ABOUT PAGE */
+.about {
+  padding: 60px 20px;
+  padding-top: 10px;
+}
+
+
+/* SECTION TITLES */
+.section-title {
+  font-size: 20px;
+  margin: 40px 0 20px;
+  font-weight: 600;
+}
+
+/* GRID */
+.grid-2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+/* CARDS (reuse base but extend) */
+.card {
+  background: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  border: 1px solid #eee;
+}
+
+.card.large {
+  margin-bottom: 20px;
+}
+
+/* ICON */
+.icon {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.icon.blue {
+  color: #3b82f6;
+}
+
+/* ROW LAYOUT */
+.card-row {
+  display: flex;
+  gap: 15px;
+  align-items: flex-start;
+}
+
+.space-between {
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* TEXT STYLES */
+.muted {
+  display: block;
+  color: #777;
+  font-size: 13px;
+}
+
+.date {
+  color: #999;
+  font-size: 12px;
+}
+
+.desc {
+  margin-top: 10px;
+  color: #555;
+  font-size: 14px;
+}
+
+
+/* CERTIFICATES */
+.certificate-img {
+    width: 100%;
+    height: 230px;
+    overflow: hidden;
+}
+
+.certificate-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 25px;
+}
+
+.certificate-card {
+  background: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  text-align: left;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+.certificate-img {
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+    background-color: #5555551f;
+}
+
+.certificate-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    padding: 10px;
+}
+
+.certificate-content {
+  padding: 25px;
+  padding-top: 10px;
+  padding-bottom: 15px;
+}
+
+
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  .grid-2 {
+    grid-template-columns: 1fr;
+  }
+
+  .card-row.space-between {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5px;
+  }
+
+  .certificate-grid {
+    grid-template-columns: 1fr;
+  }
+}
