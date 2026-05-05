@@ -31,8 +31,14 @@ body {
   padding: 15px 0;
 }
 
-.logo {
-  font-size: 20px;
+.logo a{
+  font-size: 14px;
+  text-decoration: none;
+  color: #555;
+}
+
+.logo a:hover {
+    color: #f28c38;
 }
 
 nav ul {
